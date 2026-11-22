@@ -1,0 +1,1 @@
+import test from'node:test';import assert from'node:assert/strict';import{csv,markdown}from'../src/logic.js';test('exports records',()=>{const r=[{id:'1',title:'A'}];assert.match(csv(r),/title/);assert.match(markdown('X',r),/A/)});
